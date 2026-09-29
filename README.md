@@ -1,4 +1,4 @@
-# 3D/4D Cell Segmentation Pipeline
+# 3D Cell Segmentation Pipeline
 
 An automated computer vision pipeline for segmenting cell structures from 2D images and 3D/4D microscopy volume datasets (Zarr stores). Built with **Python**, **OpenCV**, **Zarr**, and **Docker**.
 
