@@ -14,7 +14,8 @@ def preprocessing(img):
     opened = cv.morphologyEx(closed, cv.MORPH_OPEN, kernel)
     return opened
 
-def watershed(preprocessed_img):
+def watershed(img, preprocessed_img):
+    kernel = np.ones((5, 5))
     sure_bg = cv.dilate(preprocessed_img,kernel,iterations=3) 
     kernel = np.ones((3,3))
     sure_fg = cv.erode(preprocessedImg, kernel,iterations = 3)
@@ -34,5 +35,5 @@ def watershed(preprocessed_img):
 def run_pipeline(volume, i):
     img = load_image(volume, i)
     preprocessed = preprocessing(img)
-    result = watershed(preprocessed)
+    result = watershed(img, preprocessed)
     return result
