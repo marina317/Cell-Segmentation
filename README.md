@@ -1,4 +1,4 @@
-# 🔬 3D/4D Cell Segmentation Pipeline
+# 3D/4D Cell Segmentation Pipeline
 
 An automated computer vision pipeline for segmenting cell structures from 2D images and 3D/4D microscopy volume datasets (Zarr stores). Built with **Python**, **OpenCV**, **Zarr**, and **Docker**.
 
@@ -9,7 +9,7 @@ An automated computer vision pipeline for segmenting cell structures from 2D ima
 
 ---
 
-## 🌟 Key Features
+## Key Features
 
 * **Multi-Format Support**: Processes standard 2D images (`.png`, `.jpg`, `.tif`) as well as multi-dimensional 3D/4D biological `.zarr` stores.
 * **Flexible Volume Slicing**: Specify specific timepoints (`--t`) and Z-depth slices (`--z`), or batch process entire 3D volume stacks automatically.
@@ -32,7 +32,7 @@ cell-segmentation/
 
 ---
 
-## 🛠️ Image Processing Pipeline
+## Image Processing Pipeline
 
 The segmentation algorithm follows a 4-stage computer vision workflow:
 
@@ -43,7 +43,7 @@ The segmentation algorithm follows a 4-stage computer vision workflow:
 
 ---
 
-## 🐳 Quickstart with Docker (Recommended)
+## Quickstart with Docker 
 
 No local Python environment or dependencies required!
 
@@ -85,7 +85,7 @@ docker run --rm \
 
 ---
 
-## 💻 Local Setup (Without Docker)
+## Local Setup (Without Docker)
 
 ### 1. Installation
 ```bash
@@ -105,7 +105,7 @@ python src/main.py --input sample_data/sample.zarr --output sample_data/result.p
 
 ---
 
-## 📋 Command Line Options
+## Command Line Options
 
 | Parameter | Required | Description |
 | :--- | :--- | :--- |
