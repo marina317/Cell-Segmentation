@@ -30,7 +30,7 @@ def watershed(img, preprocessed_img):
     return img
 
 
-def run_pipeline(img, i):
+def run_pipeline(img):
     preprocessed = preprocessing(img)
     result = watershed(img, preprocessed)
     return result
