@@ -12,6 +12,7 @@ def preprocessing(img):
     binary = binary.astype(np.uint8)
     closed = cv.morphologyEx(binary, cv.MORPH_CLOSE,kernel)
     opened = cv.morphologyEx(closed, cv.MORPH_OPEN, kernel)
+    return opened
 
 def watershed(preprocessed_img):
     sure_bg = cv.dilate(preprocessed_img,kernel,iterations=3) 
