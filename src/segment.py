@@ -1,9 +1,7 @@
 import numpy as np
 import cv2 as cv
 
-def load_image(volume, i):
-    img = volume[0, i]
-    return img
+
 
 def preprocessing(img):
     kernel = np.ones((5, 5))
@@ -32,8 +30,7 @@ def watershed(img, preprocessed_img):
     return img
 
 
-def run_pipeline(volume, i):
-    img = load_image(volume, i)
+def run_pipeline(img, i):
     preprocessed = preprocessing(img)
     result = watershed(img, preprocessed)
     return result
